@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KomNot Bot - ប្រព័ន្ធឆែកតំណរភ្ជាប់គ្រោះថ្នាក់</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Telegram Web App Script -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ KomNot Bot</h1>
+            <p>ប្រព័ន្ធការពារសុវត្ថិភាពពីតំណរភ្ជាប់ខិលខូច និងមេរោគ</p>
+        </header>
+
+        <main>
+            <div class="scanner-box">
+                <label for="urlInput">បញ្ចូលតំណរភ្ជាប់ (URL) ដែលចង់ឆែក:</label>
+                <input type="text" id="urlInput" placeholder="https://example.com">
+                <button id="scanBtn">စစ်ဆေးភាព (Scan Now)</button>
+            </div>
+
+            <!-- Result Section -->
+            <div id="resultContainer" class="hidden">
+                <div id="statusBadge" class="badge"></div>
+                <p id="resultMessage"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Powered by KomNot Security</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
